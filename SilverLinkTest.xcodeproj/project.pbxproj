@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		111C447F4CEFBDE0225BDBEE /* Pods_SilverLinkTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E08414D3C1897838F30FA59 /* Pods_SilverLinkTestTests.framework */; };
 		3560D677244B1E8300296A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D676244B1E8300296A58 /* AppDelegate.swift */; };
-		3560D679244B1E8300296A58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D678244B1E8300296A58 /* SceneDelegate.swift */; };
 		3560D680244B1E8400296A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3560D67F244B1E8400296A58 /* Assets.xcassets */; };
 		3560D683244B1E8400296A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3560D681244B1E8400296A58 /* LaunchScreen.storyboard */; };
 		3560D68E244B1E8400296A58 /* SilverLinkTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D68D244B1E8400296A58 /* SilverLinkTestTests.swift */; };
 		3560D699244B1E8400296A58 /* SilverLinkTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D698244B1E8400296A58 /* SilverLinkTestUITests.swift */; };
 		3560D6AA244B3EB800296A58 /* BasicInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6A9244B3EB800296A58 /* BasicInfoTableViewCell.swift */; };
 		3560D6AC244B3F8A00296A58 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6AB244B3F8A00296A58 /* ListViewController.swift */; };
+		3560D6B2244B4BFA00296A58 /* ListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6B1244B4BFA00296A58 /* ListDataModel.swift */; };
+		3560D6B4244B4C3A00296A58 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6B3244B4C3A00296A58 /* ListViewModel.swift */; };
+		3560D6B6244B4C9C00296A58 /* DatasourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6B5244B4C9C00296A58 /* DatasourceProtocol.swift */; };
+		3560D6B8244B4D3700296A58 /* ListViewDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6B7244B4D3700296A58 /* ListViewDataService.swift */; };
+		3560D6BB244B4EB800296A58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6BA244B4EB800296A58 /* Constants.swift */; };
+		3560D6BD244B506300296A58 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6BC244B506300296A58 /* StringExtensions.swift */; };
+		3560D6C2244B50CA00296A58 /* RK_MsgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6C0244B50CA00296A58 /* RK_MsgView.swift */; };
+		3560D6C3244B50CA00296A58 /* BannerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6C1244B50CA00296A58 /* BannerMessage.swift */; };
+		3560D6C5244B51EE00296A58 /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6C4244B51EE00296A58 /* WebServiceHandler.swift */; };
 		3F962ED8BEB6060190F15C7D /* Pods_SilverLinkTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3084DB18B5D912FA00CF2A51 /* Pods_SilverLinkTest.framework */; };
 		F23202B86B95AA6D58FC6471 /* Pods_SilverLinkTest_SilverLinkTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82401E4D07B500D1F48DEAE /* Pods_SilverLinkTest_SilverLinkTestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +52,6 @@
 		3084DB18B5D912FA00CF2A51 /* Pods_SilverLinkTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilverLinkTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3560D673244B1E8300296A58 /* SilverLinkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverLinkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3560D676244B1E8300296A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3560D678244B1E8300296A58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3560D67F244B1E8400296A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3560D682244B1E8400296A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3560D684244B1E8400296A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +63,15 @@
 		3560D69A244B1E8400296A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3560D6A9244B3EB800296A58 /* BasicInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasicInfoTableViewCell.swift; path = SilverLinkTest/Views/BasicInfoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		3560D6AB244B3F8A00296A58 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3560D6B1244B4BFA00296A58 /* ListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataModel.swift; sourceTree = "<group>"; };
+		3560D6B3244B4C3A00296A58 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		3560D6B5244B4C9C00296A58 /* DatasourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceProtocol.swift; sourceTree = "<group>"; };
+		3560D6B7244B4D3700296A58 /* ListViewDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewDataService.swift; sourceTree = "<group>"; };
+		3560D6BA244B4EB800296A58 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3560D6BC244B506300296A58 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		3560D6C0244B50CA00296A58 /* RK_MsgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RK_MsgView.swift; sourceTree = "<group>"; };
+		3560D6C1244B50CA00296A58 /* BannerMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerMessage.swift; sourceTree = "<group>"; };
+		3560D6C4244B51EE00296A58 /* WebServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
 		68B50C7F887864A3B7D1BDC6 /* Pods-SilverLinkTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverLinkTestTests.debug.xcconfig"; path = "Target Support Files/Pods-SilverLinkTestTests/Pods-SilverLinkTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A82401E4D07B500D1F48DEAE /* Pods_SilverLinkTest_SilverLinkTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilverLinkTest_SilverLinkTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11C2193B1EA801D1EE97140 /* Pods-SilverLinkTest-SilverLinkTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverLinkTest-SilverLinkTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SilverLinkTest-SilverLinkTestUITests/Pods-SilverLinkTest-SilverLinkTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,10 +132,13 @@
 		3560D675244B1E8300296A58 /* SilverLinkTest */ = {
 			isa = PBXGroup;
 			children = (
+				3560D6BE244B507500296A58 /* Services */,
+				3560D6B9244B4EA100296A58 /* Utility */,
+				3560D6B0244B4AE600296A58 /* ViewModel */,
+				3560D6AF244B4ADB00296A58 /* Model */,
 				3560D6A8244B3E7A00296A58 /* ViewController */,
 				3560D6A7244B3E7100296A58 /* Views */,
 				3560D6A6244B3E4800296A58 /* AppDelegate */,
-				3560D678244B1E8300296A58 /* SceneDelegate.swift */,
 				3560D67F244B1E8400296A58 /* Assets.xcassets */,
 				3560D681244B1E8400296A58 /* LaunchScreen.storyboard */,
 				3560D684244B1E8400296A58 /* Info.plist */,
@@ -165,8 +184,53 @@
 			isa = PBXGroup;
 			children = (
 				3560D6AB244B3F8A00296A58 /* ListViewController.swift */,
+				3560D6B7244B4D3700296A58 /* ListViewDataService.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3560D6AF244B4ADB00296A58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3560D6B1244B4BFA00296A58 /* ListDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3560D6B0244B4AE600296A58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3560D6B3244B4C3A00296A58 /* ListViewModel.swift */,
+				3560D6B5244B4C9C00296A58 /* DatasourceProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3560D6B9244B4EA100296A58 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3560D6C1244B50CA00296A58 /* BannerMessage.swift */,
+				3560D6C0244B50CA00296A58 /* RK_MsgView.swift */,
+				3560D6BA244B4EB800296A58 /* Constants.swift */,
+				3560D6BC244B506300296A58 /* StringExtensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3560D6BE244B507500296A58 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3560D6BF244B507C00296A58 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3560D6BF244B507C00296A58 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3560D6C4244B51EE00296A58 /* WebServiceHandler.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		A63820F8D09406314F376BAC /* Pods */ = {
@@ -204,6 +268,8 @@
 				3560D670244B1E8300296A58 /* Frameworks */,
 				3560D671244B1E8300296A58 /* Resources */,
 				A1421B6E6BF4ADEB7F606331 /* [CP] Embed Pods Frameworks */,
+				3560D6AD244B436F00296A58 /* ShellScript */,
+				3560D6AE244B450300296A58 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -323,6 +389,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3560D6AD244B436F00296A58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		3560D6AE244B450300296A58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		6FDF4CE826AB99A74C22B638 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,7 +487,7 @@
 		};
 		A1421B6E6BF4ADEB7F606331 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -430,10 +531,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3560D6B8244B4D3700296A58 /* ListViewDataService.swift in Sources */,
+				3560D6B4244B4C3A00296A58 /* ListViewModel.swift in Sources */,
 				3560D6AA244B3EB800296A58 /* BasicInfoTableViewCell.swift in Sources */,
+				3560D6C2244B50CA00296A58 /* RK_MsgView.swift in Sources */,
+				3560D6BD244B506300296A58 /* StringExtensions.swift in Sources */,
+				3560D6B2244B4BFA00296A58 /* ListDataModel.swift in Sources */,
 				3560D677244B1E8300296A58 /* AppDelegate.swift in Sources */,
+				3560D6C5244B51EE00296A58 /* WebServiceHandler.swift in Sources */,
+				3560D6B6244B4C9C00296A58 /* DatasourceProtocol.swift in Sources */,
 				3560D6AC244B3F8A00296A58 /* ListViewController.swift in Sources */,
-				3560D679244B1E8300296A58 /* SceneDelegate.swift in Sources */,
+				3560D6C3244B50CA00296A58 /* BannerMessage.swift in Sources */,
+				3560D6BB244B4EB800296A58 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

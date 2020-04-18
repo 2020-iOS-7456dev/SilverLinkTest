@@ -9,42 +9,32 @@
 import UIKit
 
 class ListViewController: UIViewController {
-    
-    let listTableView = UITableView() // view
-    
+    let listTableView = UITableView()
+    var listVM = ListViewModel()
+    let dataSource = ListViewDataService()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
-        
         view.addSubview(listTableView)
         setupTableView()
+        listVM.delegate = self
+        listVM.getData()
         self.navigationItem.title = "Dynamic Title"
-
     }
-    
     func setupTableView() {
         listTableView.translatesAutoresizingMaskIntoConstraints = false
-        
-    listTableView.topAnchor.constraint(equalTo:view.safeAreaLayoutGuide.topAnchor).isActive=true
-    listTableView.leftAnchor.constraint(equalTo:view.safeAreaLayoutGuide.leftAnchor).isActive = true
-    listTableView.rightAnchor.constraint(equalTo:view.safeAreaLayoutGuide.rightAnchor).isActive = true
-    listTableView.bottomAnchor.constraint(equalTo:view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        
-        self.listTableView.dataSource = self
+        listTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive=true
+        listTableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
+        listTableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
+        listTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        self.listTableView.dataSource = self.dataSource
         self.listTableView.rowHeight = UITableView.automaticDimension
         self.listTableView.estimatedRowHeight = 100
-        
         registerTableViewCells()
     }
-    
-    func registerTableViewCells(){
+    func registerTableViewCells() {
         self.listTableView.register(BasicInfoTableViewCell.self, forCellReuseIdentifier: "basicInfoTableViewCell")
     }
-    
-    
-    
-    
     /*
      // MARK: - Navigation
      
@@ -54,28 +44,15 @@ class ListViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
 }
 
-extension ListViewController: UITableViewDataSource {
-    
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-           // #warning Incomplete implementation, return the number of sections
-           return 1
-       }
-       
-       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           // #warning Incomplete implementation, return the number of rows
-        return 10
-       }
-       
-       
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           let cell = tableView.dequeueReusableCell(withIdentifier: "basicInfoTableViewCell", for: indexPath) as! BasicInfoTableViewCell
-           cell.setDummyData(image: "dummy0")
-          
-           return cell
-       }
-    
+extension ListViewController: ListDataprotocal {
+    func success() {
+        dataSource.data = listVM.getListData()
+        self.navigationItem.title = listVM.getTitle()
+        self.listTableView.reloadData()
+    }
+    func failure() {
+       BannerMessage.sharedManager.notificationBanner(msg: "Something went wrong. Please try again!", barColor: .red)
+    }
 }
