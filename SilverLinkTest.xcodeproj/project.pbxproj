@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111C447F4CEFBDE0225BDBEE /* Pods_SilverLinkTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E08414D3C1897838F30FA59 /* Pods_SilverLinkTestTests.framework */; };
 		3560D677244B1E8300296A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D676244B1E8300296A58 /* AppDelegate.swift */; };
 		3560D679244B1E8300296A58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D678244B1E8300296A58 /* SceneDelegate.swift */; };
-		3560D67B244B1E8300296A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D67A244B1E8300296A58 /* ViewController.swift */; };
-		3560D67E244B1E8300296A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3560D67C244B1E8300296A58 /* Main.storyboard */; };
 		3560D680244B1E8400296A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3560D67F244B1E8400296A58 /* Assets.xcassets */; };
 		3560D683244B1E8400296A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3560D681244B1E8400296A58 /* LaunchScreen.storyboard */; };
 		3560D68E244B1E8400296A58 /* SilverLinkTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D68D244B1E8400296A58 /* SilverLinkTestTests.swift */; };
 		3560D699244B1E8400296A58 /* SilverLinkTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D698244B1E8400296A58 /* SilverLinkTestUITests.swift */; };
+		3560D6AA244B3EB800296A58 /* BasicInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6A9244B3EB800296A58 /* BasicInfoTableViewCell.swift */; };
+		3560D6AC244B3F8A00296A58 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560D6AB244B3F8A00296A58 /* ListViewController.swift */; };
+		3F962ED8BEB6060190F15C7D /* Pods_SilverLinkTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3084DB18B5D912FA00CF2A51 /* Pods_SilverLinkTest.framework */; };
+		F23202B86B95AA6D58FC6471 /* Pods_SilverLinkTest_SilverLinkTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82401E4D07B500D1F48DEAE /* Pods_SilverLinkTest_SilverLinkTestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19FB08D19B1238E7BA4B9E00 /* Pods-SilverLinkTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverLinkTest.release.xcconfig"; path = "Target Support Files/Pods-SilverLinkTest/Pods-SilverLinkTest.release.xcconfig"; sourceTree = "<group>"; };
+		1E08414D3C1897838F30FA59 /* Pods_SilverLinkTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilverLinkTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		271A47255F4191EB1D35FD6A /* Pods-SilverLinkTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverLinkTestTests.release.xcconfig"; path = "Target Support Files/Pods-SilverLinkTestTests/Pods-SilverLinkTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		3084DB18B5D912FA00CF2A51 /* Pods_SilverLinkTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilverLinkTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3560D673244B1E8300296A58 /* SilverLinkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverLinkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3560D676244B1E8300296A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3560D678244B1E8300296A58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3560D67A244B1E8300296A58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3560D67D244B1E8300296A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3560D67F244B1E8400296A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3560D682244B1E8400296A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3560D684244B1E8400296A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		3560D694244B1E8400296A58 /* SilverLinkTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilverLinkTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3560D698244B1E8400296A58 /* SilverLinkTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverLinkTestUITests.swift; sourceTree = "<group>"; };
 		3560D69A244B1E8400296A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3560D6A9244B3EB800296A58 /* BasicInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasicInfoTableViewCell.swift; path = SilverLinkTest/Views/BasicInfoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		3560D6AB244B3F8A00296A58 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		68B50C7F887864A3B7D1BDC6 /* Pods-SilverLinkTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverLinkTestTests.debug.xcconfig"; path = "Target Support Files/Pods-SilverLinkTestTests/Pods-SilverLinkTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A82401E4D07B500D1F48DEAE /* Pods_SilverLinkTest_SilverLinkTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilverLinkTest_SilverLinkTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11C2193B1EA801D1EE97140 /* Pods-SilverLinkTest-SilverLinkTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverLinkTest-SilverLinkTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SilverLinkTest-SilverLinkTestUITests/Pods-SilverLinkTest-SilverLinkTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B84386801ABE92EB82C8D225 /* Pods-SilverLinkTest-SilverLinkTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverLinkTest-SilverLinkTestUITests.release.xcconfig"; path = "Target Support Files/Pods-SilverLinkTest-SilverLinkTestUITests/Pods-SilverLinkTest-SilverLinkTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CC120EC1837FB6F11BEB606C /* Pods-SilverLinkTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilverLinkTest.debug.xcconfig"; path = "Target Support Files/Pods-SilverLinkTest/Pods-SilverLinkTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F962ED8BEB6060190F15C7D /* Pods_SilverLinkTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111C447F4CEFBDE0225BDBEE /* Pods_SilverLinkTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23202B86B95AA6D58FC6471 /* Pods_SilverLinkTest_SilverLinkTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				3560D68C244B1E8400296A58 /* SilverLinkTestTests */,
 				3560D697244B1E8400296A58 /* SilverLinkTestUITests */,
 				3560D674244B1E8300296A58 /* Products */,
+				A63820F8D09406314F376BAC /* Pods */,
+				E14FB4F351558D022905A1F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +116,10 @@
 		3560D675244B1E8300296A58 /* SilverLinkTest */ = {
 			isa = PBXGroup;
 			children = (
-				3560D676244B1E8300296A58 /* AppDelegate.swift */,
+				3560D6A8244B3E7A00296A58 /* ViewController */,
+				3560D6A7244B3E7100296A58 /* Views */,
+				3560D6A6244B3E4800296A58 /* AppDelegate */,
 				3560D678244B1E8300296A58 /* SceneDelegate.swift */,
-				3560D67A244B1E8300296A58 /* ViewController.swift */,
-				3560D67C244B1E8300296A58 /* Main.storyboard */,
 				3560D67F244B1E8400296A58 /* Assets.xcassets */,
 				3560D681244B1E8400296A58 /* LaunchScreen.storyboard */,
 				3560D684244B1E8400296A58 /* Info.plist */,
@@ -128,6 +145,53 @@
 			path = SilverLinkTestUITests;
 			sourceTree = "<group>";
 		};
+		3560D6A6244B3E4800296A58 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3560D676244B1E8300296A58 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3560D6A7244B3E7100296A58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3560D6A9244B3EB800296A58 /* BasicInfoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3560D6A8244B3E7A00296A58 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3560D6AB244B3F8A00296A58 /* ListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A63820F8D09406314F376BAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC120EC1837FB6F11BEB606C /* Pods-SilverLinkTest.debug.xcconfig */,
+				19FB08D19B1238E7BA4B9E00 /* Pods-SilverLinkTest.release.xcconfig */,
+				B11C2193B1EA801D1EE97140 /* Pods-SilverLinkTest-SilverLinkTestUITests.debug.xcconfig */,
+				B84386801ABE92EB82C8D225 /* Pods-SilverLinkTest-SilverLinkTestUITests.release.xcconfig */,
+				68B50C7F887864A3B7D1BDC6 /* Pods-SilverLinkTestTests.debug.xcconfig */,
+				271A47255F4191EB1D35FD6A /* Pods-SilverLinkTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E14FB4F351558D022905A1F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3084DB18B5D912FA00CF2A51 /* Pods_SilverLinkTest.framework */,
+				A82401E4D07B500D1F48DEAE /* Pods_SilverLinkTest_SilverLinkTestUITests.framework */,
+				1E08414D3C1897838F30FA59 /* Pods_SilverLinkTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3560D69D244B1E8400296A58 /* Build configuration list for PBXNativeTarget "SilverLinkTest" */;
 			buildPhases = (
+				6FDF4CE826AB99A74C22B638 /* [CP] Check Pods Manifest.lock */,
 				3560D66F244B1E8300296A58 /* Sources */,
 				3560D670244B1E8300296A58 /* Frameworks */,
 				3560D671244B1E8300296A58 /* Resources */,
+				A1421B6E6BF4ADEB7F606331 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3560D6A0244B1E8400296A58 /* Build configuration list for PBXNativeTarget "SilverLinkTestTests" */;
 			buildPhases = (
+				852CDFBF47B431683106E42D /* [CP] Check Pods Manifest.lock */,
 				3560D685244B1E8400296A58 /* Sources */,
 				3560D686244B1E8400296A58 /* Frameworks */,
 				3560D687244B1E8400296A58 /* Resources */,
@@ -170,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3560D6A3244B1E8400296A58 /* Build configuration list for PBXNativeTarget "SilverLinkTestUITests" */;
 			buildPhases = (
+				C3E429BEE103763B7F973D91 /* [CP] Check Pods Manifest.lock */,
 				3560D690244B1E8400296A58 /* Sources */,
 				3560D691244B1E8400296A58 /* Frameworks */,
 				3560D692244B1E8400296A58 /* Resources */,
+				9D23E278280E40F03AC309AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +303,6 @@
 			files = (
 				3560D683244B1E8400296A58 /* LaunchScreen.storyboard in Resources */,
 				3560D680244B1E8400296A58 /* Assets.xcassets in Resources */,
-				3560D67E244B1E8300296A58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +322,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FDF4CE826AB99A74C22B638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SilverLinkTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		852CDFBF47B431683106E42D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SilverLinkTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D23E278280E40F03AC309AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SilverLinkTest-SilverLinkTestUITests/Pods-SilverLinkTest-SilverLinkTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SilverLinkTest-SilverLinkTestUITests/Pods-SilverLinkTest-SilverLinkTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SilverLinkTest-SilverLinkTestUITests/Pods-SilverLinkTest-SilverLinkTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1421B6E6BF4ADEB7F606331 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SilverLinkTest/Pods-SilverLinkTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SilverLinkTest/Pods-SilverLinkTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SilverLinkTest/Pods-SilverLinkTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3E429BEE103763B7F973D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SilverLinkTest-SilverLinkTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3560D66F244B1E8300296A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3560D67B244B1E8300296A58 /* ViewController.swift in Sources */,
+				3560D6AA244B3EB800296A58 /* BasicInfoTableViewCell.swift in Sources */,
 				3560D677244B1E8300296A58 /* AppDelegate.swift in Sources */,
+				3560D6AC244B3F8A00296A58 /* ListViewController.swift in Sources */,
 				3560D679244B1E8300296A58 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +469,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3560D67C244B1E8300296A58 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3560D67D244B1E8300296A58 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3560D681244B1E8400296A58 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,11 +596,13 @@
 		};
 		3560D69E244B1E8400296A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC120EC1837FB6F11BEB606C /* Pods-SilverLinkTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUAZ6FEHBX;
 				INFOPLIST_FILE = SilverLinkTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +616,13 @@
 		};
 		3560D69F244B1E8400296A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FB08D19B1238E7BA4B9E00 /* Pods-SilverLinkTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUAZ6FEHBX;
 				INFOPLIST_FILE = SilverLinkTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +636,7 @@
 		};
 		3560D6A1244B1E8400296A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B50C7F887864A3B7D1BDC6 /* Pods-SilverLinkTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +659,7 @@
 		};
 		3560D6A2244B1E8400296A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271A47255F4191EB1D35FD6A /* Pods-SilverLinkTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +682,7 @@
 		};
 		3560D6A4244B1E8400296A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11C2193B1EA801D1EE97140 /* Pods-SilverLinkTest-SilverLinkTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +703,7 @@
 		};
 		3560D6A5244B1E8400296A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B84386801ABE92EB82C8D225 /* Pods-SilverLinkTest-SilverLinkTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
